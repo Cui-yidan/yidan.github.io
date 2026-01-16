@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				border:0;
+				padding:0;
+				box-sizing: border-box;
+			}
+			.container{
+				height:1000px;
+				width:800px;
+				background:#c1c1c1;
+				
+			}
+			header{
+				height:150px;
+				width:780px;
+				margin-top:10px;
+				margin:10px auto;
+				background:url(images/导航条.jpg)
+				/* background:#aaaaff; */
+			}
+			.header-a {
+				float:right;
+				margin-top:10px;
+				margin-right:5px;
+			}
+				
+			.header-a a{
+				text-decoration: none;
+				color:#ffffff;
+			}
+			.header-a a:hover{
+				text-decoration: underline;
+				
+			}
+				
+			nav{
+				height:50px;
+				width:780px;
+				/* background:#a5efff; */
+				margin:0 auto;
+			}
+				
+			.nav2{
+				width:560px;
+				height:50px;
+				background:#2d6595;
+				float:right;
+				border-radius: 10px 0 0 0;
+				
+			}	
+			.mulu{
+				list-style:none;
+			}
+			.mulu li a{
+				text-decoration: none;
+				float:left;
+				margin-right: 5px;
+				color:#ffffff;
+				margin-left:10px;
+			}
+				
+			.mulu li a:hover{
+				text-decoration: underline;
+			}
+			.left{
+				height:700px;
+				width:160px;
+				/* background:#f0b2ff; */
+				float:left;
+				margin-top:10px;
+				margin-left:10px;
+			}	
+			.left1{
+				height:250px;
+				width:160px;
+				/* background:#cbe9ff; */
+				float:left;
+			}
+			.left1-1{
+				height:50px;
+				background:#2d6696;
+				border-radius: 10px 10px 0 0;
+				color:#ffffff;
+				line-height:35px;
+				text-align: center;
+				
+			}	
+			.left1-2{
+				background:#cad7de;
+				height:200px;
+				width:160px;
+				float:left;
+			}
+			.left1-2 ul {
+				list-style: none;
+			}
+			.left1-2 ul li{
+				background:url(images/ar.gif) no-repeat 0.5em center;
+				text-indent:1.7em;
+			}	
+			.left1-2 ul li a{
+				text-decoration: none;
+				color:#333;
+				line-height:40px;
+				
+			}
+			.left ul li a:hover{
+				text-decoration: underline;
+			}
+			.left2{
+				height:435px;
+				width:160px;
+				/* background:#8aaa8a; */
+				margin-top:10px;
+				float:left;
+				
+			}
+			.left2-1{
+				color:#ffffff;
+				background:#2d6595;
+				height:35px;
+				line-height: 35px;
+				text-align: center;
+				border-radius: 10px 10px 0 0 ;
+			}
+			.left2-2{
+				background:#cbd4da;
+				height:400px;
+				width:160px;
+				float:left;
+			}
+			.left2-2 dl{
+				border-bottom: 1px dotted #333;
+				padding-bottom: 55px;
+			}
+			.left2-2 dd a{
+				font-weight:700;
+				color:#333;
+				text-decoration: none;
+			}
+			.left2-2 dd{
+				font-size: 13px;;
+				
+			}
+			.left2-2 dt a{
+				font-size: 10px;
+				text-align: center;
+				color:#333;
+				text-decoration: none;
+			}
+			.moddle{
+				height:700px;
+				width:450px;
+				background:#9aaa81;
+				float:left;
+				margin:10px 10px;
+				
+			}
+			.moddle1{
+				height:260px;
+				width:450px;
+			}
+			.moddle2{
+				heigth:440px;
+				width:450px;
+				
+			}
+			.moddle2-1{
+				height:35px;
+				weight:450px;
+				color:#ffffff;
+				background:#3c638d;
+				line-height:35px;
+				text-align: center;
+				border-radius: 10px 10px 0 0;
+			}
+			.anlikutable{
+				height:405px;
+				width:450px;
+				background:#81c2b4;
+				
+			}
+			.ku{
+				display: flex;
+				margin-top: 15px;
+				width:225px;
+				height:100px;
+				float:left;
+				color:#333;
+				font-size: 14px;
+			}
+				
+			.ku:nth-child(1){
+				border-bottom:1px dashed #333;
+				border-right:1px  dashed #333;
+			}
+			.ku:nth-child(2){
+				border-bottom:1px dashed #333;
+			}
+			.ku:nth-child(3){
+				border-right:1px dashed #333;
+			}
+			.a{
+				font-size: 18px;
+				font-weight:700;
+				margin-left:10px
+			}
+			.b{
+				margin-left:8px;
+			}
+			.right{
+				height:700px;
+				width:150px;
+				/* background:#7f4d7f; */
+				float:left;
+				margin:10px 0;
+			}
+			.yonghu{
+				color:#ffffff;
+				height:150px;
+			}
+			.right2{
+				height:400px;
+			}
+			.ziyuan{
+				height:50px;
+				width:150px;
+				background:#3d6591;
+				color:#ffffff;
+				line-height:35px;
+				text-align: center;
+				border-radius: 15px 15px 0 0;
+			}
+			input[type="button"]{
+				background:#2d6595;
+				color:#ffffff;
+				margin-top:10px;
+				padding:5px 20px;
+			}
+			footer{
+				height:50px;
+				width:780px;
+				background:#4f553b;
+				display:flex;
+				margin:10px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header-a">
+				<a href="#">网站首页</a>
+				&emsp;|&emsp;
+				<a href="#">联系我们</a>
+				</div>
+			</header>
+			<nav class="nav">
+				<div class="nav2">
+					<ul class="mulu">
+						<li><a href="#">首页&emsp;|</a></li>
+						<li><a href="#">核心课程&emsp;|</a></li>
+						<li><a href="#">在线课程&emsp;|</a></li>
+						<li><a href="#">教学案例&emsp;|</a></li>
+						<li><a href="#">拓展模块&emsp;|</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				<div>
+			</nav>
+			<div class="content">
+				<div class="left">
+					<div class="left1">
+						<div class="left1-1">在线课程讲解</div>
+						<div class="left1-2">
+							<ul class="daohangtiao1">
+								<li><a href="#">网页制作与网计1</a></li>
+								<li><a href="#">网页制作与网计1</a></li>
+								<li><a href="#">网页制作与网计1</a></li>
+								<li><a href="#">网页制作与网计1</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left2">
+						<div class="left2-1">专题学习网站</div>
+						<div class="left2-2">
+							<dl>
+								<dd><a href="#">计算机应用技术</a></dd>
+								<dt><a href="#">计算机专题学hhh习网站介绍</a></dt>
+								<dt><a href="#">计算机专题学hhh习网站介绍</a></dt>
+							</dl>
+							<dl>
+								<dd><a href="#">计算机应用技术</a></dd>
+								<dt><a href="#">计算机专题学习网hhh站介绍</a></dt>
+								<dt><a href="#">计算机专题学习hhh网站介绍</a></dt>
+							</dl>
+							<dl>
+								<dd><a href="#">计算机应用技术</a></dd>
+								<dt><a href="#">计算机专题学习hhh网站介绍</a></dt>
+								<dt><a href="#">计算机专题学习网hhh站介绍</a></dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="moddle">
+					<div class="moddle1"></div>
+					<div class="moddle2">
+						<div class="moddle2-1">在线案例库</div>
+						<div class=" anlikutable">
+							<div class="ku">
+								<img src="images/微信图片_20251224161042_3233_29.jpg">
+								<div class="kuword">
+									<p class="a"> 网页制作</p>
+									<p class="b">教学案例库相关内容介绍</p>
+								</div>
+							</div>
+							<div class="ku">
+								<img src="images/微信图片_20251224161042_3233_29.jpg">
+								<div class="kuword">
+									<p class="a">网页制作</p>
+									<p class="b">教学案例库相关内容介绍</p>
+								</div>
+							</div>
+							<div class="ku">
+								<img src="images/微信图片_20251224161042_3233_29.jpg">
+								<div class="kuword">
+									<p class="a">网页制作</p>
+									<p class="b">教学案例库相关内容介绍</p>
+								</div>
+							</div>
+							<div class="ku">
+								<img src="images/微信图片_20251224161041_3229_29.jpg">
+								<div class="kuword">
+									<p class="a">网页制作</p>
+									<p class="b">教学案例库相关内容介绍</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="yonghu">
+						用户名<br/>
+						<input type="text"><br/>
+						密码<br/>
+						<input type="password"/>
+						<input type="button" value="登录"/>
+						<input type="button" value="注册"/>
+					</div>
+					<div class="right2">
+						<div class="ziyuan">
+							资源搜索区
+						</div>
+						<div class="chaxun">
+							<input type="checkbox">计算机应用技术<br/>
+							<input type="checkbox">人工只能技术<br/>
+							<input type="checkbox">大数据技术<br/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<footer></footer>
+		</div>
+		
+	</body>
+</html>
